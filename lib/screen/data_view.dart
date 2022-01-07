@@ -192,8 +192,8 @@ class Labelnama extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(8),
-          color: Color(0xffC7C7C7),
+          padding: const EdgeInsets.all(8),
+          color: const Color(0xffC7C7C7),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
