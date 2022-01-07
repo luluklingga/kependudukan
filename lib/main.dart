@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kependudukan/screen/input_login.dart';
 import 'package:kependudukan/screen/input_new_data.dart';
+import 'package:kependudukan/screen/navigation.dart';
 
 void main() {
   runApp(const App());
@@ -15,17 +16,19 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'kependudukan',
       theme: ThemeData(
-        textTheme: TextTheme(bodyText1: TextStyle(color: Color(0xff377765))),
+          textTheme: TextTheme(bodyText1: TextStyle(color: Color(0xff377765))),
           elevatedButtonTheme: ElevatedButtonThemeData(
               style: ButtonStyle(
-                padding: MaterialStateProperty.all(const EdgeInsets.symmetric(vertical: 15)),
-                foregroundColor: MaterialStateProperty.all(Colors.white),
+                  padding: MaterialStateProperty.all(
+                      const EdgeInsets.symmetric(vertical: 15)),
+                  foregroundColor: MaterialStateProperty.all(Colors.white),
                   backgroundColor:
                       MaterialStateProperty.all(Color(0xff94BEB4)))),
           fontFamily: 'Roboto',
           primaryColor: Color(0xff68A697),
-          appBarTheme: AppBarTheme( centerTitle: true, backgroundColor: Color(0xff68A697))),
-      home: const InputLogin(),
+          appBarTheme: AppBarTheme(
+              centerTitle: true, backgroundColor: Color(0xff68A697))),
+      home: const Navigation(),
     );
   }
 }
